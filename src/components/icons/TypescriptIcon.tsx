@@ -1,6 +1,8 @@
-const TypescriptIcon = () => {
+import { SVGProps } from "react";
+
+const TypescriptIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
       <g>
         <path
           d="M28,4V28H4V4H28m0-2H4A2,2,0,0,0,2,4V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z"

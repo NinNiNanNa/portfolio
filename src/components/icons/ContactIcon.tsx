@@ -1,4 +1,6 @@
-const ContactIcon = () => {
+import { SVGProps } from "react";
+
+const ContactIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="30"
@@ -6,6 +8,7 @@ const ContactIcon = () => {
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
       fill="rgb(106, 115, 125)"
+      {...props}
     >
       <path
         fillRule="evenodd"

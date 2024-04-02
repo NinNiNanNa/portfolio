@@ -1,4 +1,6 @@
-const ArrowdownIcon = () => {
+import { SVGProps } from "react";
+
+const ArrowdownIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="30"
@@ -6,6 +8,7 @@ const ArrowdownIcon = () => {
       version="1.1"
       viewBox="0 0 1e3 1e3"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="m752.45 296.22-252.45 251.9-252.45-251.9-77.55 77.55 330 330 330-330z"

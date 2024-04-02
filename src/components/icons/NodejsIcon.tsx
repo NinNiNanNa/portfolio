@@ -1,6 +1,8 @@
-const NodejsIcon = () => {
+import { SVGProps } from "react";
+
+const NodejsIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
       <g>
         <path
           d="M16,20.00258v2h4a2,2,0,0,0,2-2v-2a2,2,0,0,0-2-2H18v-2h4v-2H18a2,2,0,0,0-2,2v2a2,2,0,0,0,2,2h2v2Z"

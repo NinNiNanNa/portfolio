@@ -1,4 +1,6 @@
-const ExtensionsIcon = () => {
+import { SVGProps } from "react";
+
+const ExtensionsIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="30"
@@ -6,6 +8,7 @@ const ExtensionsIcon = () => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
+      {...props}
     >
       <path
         fillRule="evenodd"

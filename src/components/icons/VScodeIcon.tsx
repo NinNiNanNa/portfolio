@@ -1,12 +1,15 @@
-const VisualStudioCodeIcon = () => {
+import { SVGProps } from "react";
+
+const VScodeIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="19"
+      height="19"
       viewBox="0 -1 256 256"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
+      {...props}
     >
       <defs>
         <path
@@ -58,4 +61,4 @@ const VisualStudioCodeIcon = () => {
   );
 };
 
-export default VisualStudioCodeIcon;
+export default VScodeIcon;

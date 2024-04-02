@@ -1,6 +1,8 @@
-const TsconfigIcon = () => {
+import { SVGProps } from "react";
+
+const TsconfigIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
       <path
         d="M15,2H6A2.00587,2.00587,0,0,0,4,4V26a2.00591,2.00591,0,0,0,2,2h6V24H6V22h6V20H6V18h6V16H6V14h6V12h2V4l8,8h2V11Z"
         fill="#757575"
