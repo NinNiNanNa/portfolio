@@ -3,11 +3,12 @@ import { SVGProps } from "react";
 const WindowCloseIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="30"
-      height="30"
+      width="1em"
+      height="1em"
       version="1.1"
       viewBox="0 0 1e3 1e3"
       xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
       {...props}
     >
       <path

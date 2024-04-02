@@ -1,6 +1,10 @@
 :root {
-  --main-bg: ;
+  --header-bg: #3c3c3c;
+  --header-hover-bg: #454646;
+  --header-text: #cccccc;
 }
 
 [data-theme="light"] {
+  --header-bg: ;
+  --header-hover-bg: ;
 }
