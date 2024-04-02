@@ -3,7 +3,6 @@ import BellIcon from "./icons/BellIcon";
 import CircleCloseIcon from "./icons/CircleCloseIcon";
 import ExclamationIcon from "./icons/ExclamationIcon";
 import PrettierIcon from "./icons/PrettierIcon";
-import ReactIcon from "./icons/ReactIcon";
 import RemoteIcon from "./icons/RemoteIcon";
 import SourceControlIcon from "./icons/SourceControlIcon";
 

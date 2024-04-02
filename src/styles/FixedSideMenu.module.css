@@ -1,0 +1,29 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--aside-bg);
+}
+
+.icon_wrap {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon_wrap:hover .icon {
+  fill: var(--aside-hover-text);
+}
+.icon_wrap.active {
+  border-left: 3px solid #fff;
+}
+.icon_wrap.active .icon {
+  fill: var(--aside-hover-text);
+}
+
+.icon {
+  width: 23px;
+  color: var(--aside-text);
+}

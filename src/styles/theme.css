@@ -7,6 +7,9 @@
   --footer-hover-bg: #1e85ca;
   --footer-accent-bg: #16825d;
   --footer-accent-hover-bg: #308b6d;
+  --aside-text: #858585;
+  --aside-hover-text: white;
+  --aside-bg: #333333;
 }
 
 [data-theme="light"] {
