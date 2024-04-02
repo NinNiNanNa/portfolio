@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 const SourceControlIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="30"
+      width="15"
       fill="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

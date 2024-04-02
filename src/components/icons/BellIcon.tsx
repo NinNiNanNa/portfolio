@@ -3,8 +3,8 @@ import { SVGProps } from "react";
 const BellIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="30"
-      height="30"
+      width="17"
+      height="17"
       viewBox="0 0 0.6 0.6"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
