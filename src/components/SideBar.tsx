@@ -1,24 +1,22 @@
 import { useState } from "react";
-import style from "../../styles/SideBar.module.css";
-import ArrowDownIcon from "../icons/ArrowDownIcon";
-import ArrowRightIcon from "../icons/ArrowRightIcon";
-import FolderComponentsIcon from "../icons/FolderComponentsIcon";
-import FolderNodeIcon from "../icons/FolderNodeIcon";
-import FolderPublicIcon from "../icons/FolderPublicIcon";
-import GitIcon from "../icons/GitIcon";
-import MoreIcon from "../icons/MoreIcon";
-import NodejsIcon from "../icons/NodejsIcon";
-import ReactIcon from "../icons/ReactIcon";
-import ReadmeIcon from "../icons/ReadmeIcon";
-import TsconfigIcon from "../icons/TsconfigIcon";
-import MenuItem from "./MenuItem";
-import PathItem from "./PathItem";
-import FolderComponentsOpenIcon from "../icons/FolderComponentsOpenIcon";
-import FolderSrcOpenIcon from "../icons/FolderSrcOpenIcon";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import style from "../styles/SideBar.module.css";
+import MoreIcon from "./icons/MoreIcon";
+import ArrowDownIcon from "./icons/ArrowDownIcon";
+import ArrowRightIcon from "./icons/ArrowRightIcon";
+import FolderNodeIcon from "./icons/FolderNodeIcon";
+import FolderPublicIcon from "./icons/FolderPublicIcon";
+import FolderSrcOpenIcon from "./icons/FolderSrcOpenIcon";
+import FolderComponentsOpenIcon from "./icons/FolderComponentsOpenIcon";
+import FolderComponentsIcon from "./icons/FolderComponentsIcon";
+import ReactIcon from "./icons/ReactIcon";
+import NodejsIcon from "./icons/NodejsIcon";
+import GitIcon from "./icons/GitIcon";
+import ReadmeIcon from "./icons/ReadmeIcon";
+import TsconfigIcon from "./icons/TsconfigIcon";
+import MenuItem from "./sidebar/MenuItem";
+import PathItem from "./sidebar/PathItem";
 
-function HomeSideBar() {
+function SideBar() {
   const [open, setOpen] = useState(false);
   const toggleClick = () => {
     setOpen((prev) => !prev);
@@ -68,9 +66,15 @@ function HomeSideBar() {
                   deepDepth={true}
                 />
                 <PathItem
-                  path="/skills"
+                  path="/projects"
                   Icon={ReactIcon}
-                  title="제목제목2"
+                  title="제목제목3"
+                  deepDepth={true}
+                />
+                <PathItem
+                  path="/contact"
+                  Icon={ReactIcon}
+                  title="제목제목4"
                   deepDepth={true}
                 />
               </>
@@ -97,4 +101,4 @@ function HomeSideBar() {
   );
 }
 
-export default HomeSideBar;
+export default SideBar;
