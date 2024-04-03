@@ -55,7 +55,7 @@ function FixedSideMenu() {
         </div>
         <div>
           <Link
-            to="/"
+            to="/about"
             className={style.icon_wrap}
             data-tooltip-id="tooltip"
             data-tooltip-content="About"

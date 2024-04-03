@@ -10,6 +10,12 @@
   --aside-text: #858585;
   --aside-hover-text: white;
   --aside-bg: #333333;
+  --sidebar-bg: #252526;
+  --sidebar-hover-bg: #2a2d2e;
+  --sidebar-focus-border: #007fd4;
+  --sidebar-focus-bg: rgba(0, 127, 212, 0.3);
+  --sidebar-active-bg: #37373d;
+  --sidebar-border: #474747;
 }
 
 [data-theme="light"] {

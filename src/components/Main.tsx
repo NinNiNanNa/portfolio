@@ -13,9 +13,10 @@ function Main() {
         <FixedSideMenu />
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
+            <Route path="/" element={<Home />}>
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
+            </Route>
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

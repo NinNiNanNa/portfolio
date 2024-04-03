@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-const ArrowDownIcon = (props: SVGProps<SVGSVGElement>) => {
+const ArrowRightIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="30"
@@ -11,9 +11,9 @@ const ArrowDownIcon = (props: SVGProps<SVGSVGElement>) => {
       fill="currentColor"
       {...props}
     >
-      <path d="m752.45 296.22-252.45 251.9-252.45-251.9-77.55 77.55 330 330 330-330z" />
+      <path d="m296.22 247.55 251.9 252.45-251.9 252.45 77.55 77.55 330-330-330-330z" />
     </svg>
   );
 };
 
-export default ArrowDownIcon;
+export default ArrowRightIcon;
