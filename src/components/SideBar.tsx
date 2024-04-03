@@ -13,8 +13,9 @@ import NodejsIcon from "./icons/NodejsIcon";
 import GitIcon from "./icons/GitIcon";
 import ReadmeIcon from "./icons/ReadmeIcon";
 import TsconfigIcon from "./icons/TsconfigIcon";
-import MenuItem from "./sidebar/MenuItem";
-import PathItem from "./sidebar/PathItem";
+
+import MenuItem from "./sidebar_item/MenuItem";
+import PathItem from "./sidebar_item/PathItem";
 
 function SideBar() {
   const [open, setOpen] = useState(false);
