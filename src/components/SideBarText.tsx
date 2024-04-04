@@ -52,30 +52,35 @@ function SideBarText() {
             />
             <PathItem
               onClick={toggleClick}
-              path="/"
               Arrow={open ? ArrowDownIcon : ArrowRightIcon}
               Icon={open ? FolderComponentsOpenIcon : FolderComponentsIcon}
-              title={open ? "components" : "components(Click!!)"}
+              title={open ? "components" : "Open! 👐"}
               depth={true}
             />
             {open && (
               <>
                 <PathItem
+                  path="/"
+                  Icon={ReactIcon}
+                  title="Home.tsx"
+                  deepDepth={true}
+                />
+                <PathItem
                   path="/about"
                   Icon={ReactIcon}
-                  title="제목제목"
+                  title="About.tsx"
                   deepDepth={true}
                 />
                 <PathItem
                   path="/projects"
                   Icon={ReactIcon}
-                  title="제목제목3"
+                  title="Projects.tsx"
                   deepDepth={true}
                 />
                 <PathItem
                   path="/contact"
                   Icon={ReactIcon}
-                  title="제목제목4"
+                  title="Contact.tsx"
                   deepDepth={true}
                 />
               </>
