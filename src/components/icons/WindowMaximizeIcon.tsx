@@ -3,9 +3,9 @@ import { SVGProps } from "react";
 const WindowMaximizeIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      viewBox="2 1.9 10 10"
-      height="1em"
       width="1em"
+      height="1em"
+      viewBox="2 1.9 10 10"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       {...props}

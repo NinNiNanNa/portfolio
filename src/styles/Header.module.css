@@ -1,4 +1,5 @@
 .left_btn_wrap {
+  flex-grow: 1;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -6,24 +7,51 @@
 .icon {
   margin-left: 15px;
   width: 20px;
+  height: 20px;
 }
 .menu_items {
   display: flex;
-  gap: 10px;
 }
 .menu_item {
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
   cursor: default;
 }
 .menu_item:hover {
   background-color: var(--header-hover-bg);
 }
 
-.right_btn_wrap {
+.center_title_wrap {
+  flex-grow: 2;
   display: flex;
+  align-items: center;
 }
-.window_icon {
+.title_wrap {
+  padding: 2px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--aside-text);
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--header-hover-bg);
+  }
+}
+.icon_search {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.right_btn_wrap {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.icon_window_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +59,13 @@
   height: 34px;
   transition: all 0.3s;
 }
-.window_icon:hover {
+.icon_window_wrap:hover {
   background-color: var(--header-hover-bg);
 }
-.window_icon:last-child:hover {
+.icon_window_wrap:last-child:hover {
   background-color: red;
+}
+.icon_window {
+  width: 13px;
+  height: 13px;
 }

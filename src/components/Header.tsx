@@ -1,4 +1,6 @@
+import { Tooltip } from "react-tooltip";
 import style from "../styles/Header.module.css";
+import SearchIcon from "./icons/SearchIcon";
 import VScodeIcon from "./icons/VScodeIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
@@ -21,15 +23,26 @@ function Header() {
             <li className={style.menu_item}>Help</li>
           </ul>
         </div>
+        <div className={style.center_title_wrap}>
+          <div
+            className={style.title_wrap}
+            data-tooltip-id="tooltip"
+            data-tooltip-content="Visual Studio Code 스타일의 포트폴리오 입니다! 🙋"
+          >
+            <Tooltip id="tooltip" border="1px solid var(--aside-text)" />
+            <SearchIcon className={style.icon_search} />
+            portfolio
+          </div>
+        </div>
         <div className={style.right_btn_wrap}>
-          <div className={style.window_icon}>
-            <WindowMinimizeIcon />
+          <div className={style.icon_window_wrap}>
+            <WindowMinimizeIcon className={style.icon_window} />
           </div>
-          <div className={style.window_icon}>
-            <WindowMaximizeIcon />
+          <div className={style.icon_window_wrap}>
+            <WindowMaximizeIcon className={style.icon_window} />
           </div>
-          <div className={style.window_icon}>
-            <WindowCloseIcon />
+          <div className={style.icon_window_wrap}>
+            <WindowCloseIcon className={style.icon_window} />
           </div>
         </div>
       </header>

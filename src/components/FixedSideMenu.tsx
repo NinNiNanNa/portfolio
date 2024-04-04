@@ -68,7 +68,7 @@ function FixedSideMenu() {
             data-tooltip-id="tooltip"
             data-tooltip-content="Setting"
           >
-            <Tooltip id="tooltip" border="1px solid #ccc" />
+            <Tooltip id="tooltip" border="1px solid var(--aside-text)" />
             <SettingIcon className={style.icon} />
           </div>
         </div>
