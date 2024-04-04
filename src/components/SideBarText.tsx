@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "../styles/SideBar.module.css";
+import style from "../styles/SideBarText.module.css";
 import MoreIcon from "./icons/MoreIcon";
 import ArrowDownIcon from "./icons/ArrowDownIcon";
 import ArrowRightIcon from "./icons/ArrowRightIcon";

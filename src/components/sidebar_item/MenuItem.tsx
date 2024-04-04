@@ -1,4 +1,4 @@
-import style from "../../styles/SideBar.module.css";
+import style from "../../styles/SideBarText.module.css";
 
 interface IProps {
   Arrow: React.ComponentType<React.SVGProps<SVGSVGElement>>;

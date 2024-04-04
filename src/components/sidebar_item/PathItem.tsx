@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import style from "../../styles/SideBar.module.css";
+import style from "../../styles/SideBarText.module.css";
 
 interface IProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;

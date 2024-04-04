@@ -1,68 +1,42 @@
-import React from "react";
-import style from "../styles/FixedSideMenu.module.css";
+import { Link } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
+import IconItem from "./sidebar_item/IconItem";
+/* icon import */
 import AccountIcon from "./icons/AccountIcon";
 import ContactIcon from "./icons/ContactIcon";
 import DocumentsIcon from "./icons/DocumentsIcon";
 import ExtensionsIcon from "./icons/ExtensionsIcon";
 import SettingIcon from "./icons/SettingIcon";
 import SourceControlIcon from "./icons/SourceControlIcon";
-import { Link, NavLink } from "react-router-dom";
-import { Tooltip } from "react-tooltip";
-
-interface MenuItem {
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  path: string;
-  title: string;
-}
-
-const topItems: MenuItem[] = [
-  { Icon: DocumentsIcon, path: "/", title: "Home" },
-  { Icon: ExtensionsIcon, path: "/projects", title: "Projects" },
-  { Icon: ContactIcon, path: "/contact", title: "Contact" },
-];
+/* CSS import */
+import style from "../styles/SideBarIcon.module.css";
+import InfoIcon from "./icons/InfoIcon";
 
 function SideBarIcon() {
   return (
     <>
       <aside>
         <div>
-          {topItems.map(({ Icon, path, title }, index) => (
-            <NavLink
-              key={index}
-              to={path}
-              className={({ isActive }) =>
-                isActive
-                  ? `${style.icon_wrap} ${style.active}`
-                  : `${style.icon_wrap}`
-              }
-              data-tooltip-id="tooltip"
-              data-tooltip-content={title}
-            >
-              <Tooltip id="tooltip" />
-              <Icon className={style.icon} />
-            </NavLink>
-          ))}
-          <Link
-            to="https://github.com/NinNiNanNa"
+          <IconItem Icon={DocumentsIcon} path="/" title="Home" />
+          <IconItem Icon={InfoIcon} path="/about" title="About" />
+          <IconItem Icon={ExtensionsIcon} path="/projects" title="Projects" />
+          <IconItem Icon={ContactIcon} path="/contact" title="Contact" />
+          <IconItem
+            Icon={SourceControlIcon}
+            path="https://github.com/NinNiNanNa"
             target="_blank"
-            className={style.icon_wrap}
-            data-tooltip-id="tooltip"
-            data-tooltip-content="GitHub"
-          >
-            <Tooltip id="tooltip" />
-            <SourceControlIcon className={style.icon} />
-          </Link>
+            title="GitHub"
+          />
         </div>
         <div>
-          <Link
-            to="/about"
+          <div
             className={style.icon_wrap}
             data-tooltip-id="tooltip"
             data-tooltip-content="About"
           >
             <Tooltip id="tooltip" />
             <AccountIcon className={style.icon} />
-          </Link>
+          </div>
           <div
             className={style.icon_wrap}
             data-tooltip-id="tooltip"
