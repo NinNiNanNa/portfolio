@@ -1,17 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import FixedSideMenu from "./FixedSideMenu";
+import SideBarIcon from "./SideBarIcon";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
-import SideBar from "./SideBar";
+import SideBarText from "./SideBarText";
 
 function Main() {
   return (
     <>
       <main>
-        <FixedSideMenu />
-        <SideBar />
+        <SideBarIcon />
+        <SideBarText />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -21,7 +21,7 @@ const topItems: MenuItem[] = [
   { Icon: ContactIcon, path: "/contact", title: "Contact" },
 ];
 
-function FixedSideMenu() {
+function SideBarIcon() {
   return (
     <>
       <aside>
@@ -77,4 +77,4 @@ function FixedSideMenu() {
   );
 }
 
-export default FixedSideMenu;
+export default SideBarIcon;

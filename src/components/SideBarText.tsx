@@ -17,7 +17,7 @@ import TsconfigIcon from "./icons/TsconfigIcon";
 import MenuItem from "./sidebar_item/MenuItem";
 import PathItem from "./sidebar_item/PathItem";
 
-function SideBar() {
+function SideBarText() {
   const [open, setOpen] = useState(false);
   const toggleClick = () => {
     setOpen((prev) => !prev);
@@ -102,4 +102,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default SideBarText;
