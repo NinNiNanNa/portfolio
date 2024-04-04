@@ -1,0 +1,33 @@
+.items_wrap {
+  background-color: var(--sidebar-bg);
+}
+.item_wrap {
+  padding: 9px 10px;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--topbar-item-bg);
+  h5 {
+    font-weight: normal;
+  }
+}
+.item_wrap.active {
+  background-color: var(--topbar-item-active-bg);
+}
+
+.icon_theme {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.icon_close_wrap {
+  margin-left: 5px;
+  padding: 0 4px;
+  border-radius: 5px;
+}
+.icon_close_wrap:hover {
+  background-color: var(--close-hover-bg);
+}
+.icon_close {
+  width: 13px;
+  height: 13px;
+}

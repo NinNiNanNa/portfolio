@@ -16,6 +16,9 @@
   --sidebar-focus-bg: rgba(0, 127, 212, 0.3);
   --sidebar-active-bg: #37373d;
   --sidebar-border: #474747;
+  --topbar-item-bg: #2d2d2d;
+  --topbar-item-active-bg: #1e1e1e;
+  --close-hover-bg: #343535;
 }
 
 [data-theme="light"] {
