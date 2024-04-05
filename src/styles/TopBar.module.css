@@ -2,9 +2,10 @@
   background-color: var(--sidebar-bg);
 }
 .item_wrap {
-  padding: 9px 10px;
+  padding: 7px 10px;
   display: inline-flex;
   align-items: center;
+  border-left: 1px solid var(--topbar-item-active-bg);
   background-color: var(--topbar-item-bg);
   h5 {
     font-weight: normal;
