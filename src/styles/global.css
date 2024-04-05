@@ -73,7 +73,7 @@ main {
   display: flex;
   width: 100%;
   height: calc(100vh - 59px);
-  background-color: black;
+  background-color: var(--topbar-item-active-bg);
 }
 footer {
   z-index: 2;
