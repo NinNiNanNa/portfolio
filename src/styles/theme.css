@@ -22,6 +22,10 @@
   --vscode-fill: #151515;
   --home-text: #707070;
   --home-icon-bg: #2c2c2c;
+  --css-selector: #ffd70e;
+  --css-declarationBlock: #fff;
+  --css-property: #68cdfe;
+  --css-value: #ce9178;
 }
 
 [data-theme="light"] {

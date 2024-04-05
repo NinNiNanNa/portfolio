@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import IconItem from "./sidebar_item/IconItem";
 /* icon import */

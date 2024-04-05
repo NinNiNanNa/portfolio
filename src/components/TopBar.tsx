@@ -3,6 +3,7 @@ import TopItem from "./sidebar_item/TopItem";
 import style from "../styles/TopBar.module.css";
 import ReactIcon from "./icons/ReactIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
+import CssIcon from "./icons/CssIcon";
 
 function TopBar() {
   return (
@@ -27,8 +28,8 @@ function TopBar() {
           CloseIcon={WindowCloseIcon}
         />
         <TopItem
-          Icon={ReactIcon}
-          title="Contact.tsx"
+          Icon={CssIcon}
+          title="Contact.css"
           path="/contact"
           CloseIcon={WindowCloseIcon}
         />

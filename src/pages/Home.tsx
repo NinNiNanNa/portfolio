@@ -1,16 +1,16 @@
+import HomeItem from "../components/content_item/HomeItem";
 /* icon import */
 import DocumentsIcon from "../components/icons/DocumentsIcon";
 import ReactIcon from "../components/icons/ReactIcon";
 import SolidColorVScodeIcon from "../components/icons/SolidColorVScodeIcon";
-/* img import */
-import hello from "../assets/images/wave-hello.gif";
-/* CSS import */
-import style from "../styles/Home.module.css";
-import HomeItem from "../components/content_item/HomeItem";
 import InfoIcon from "../components/icons/InfoIcon";
 import ExtensionsIcon from "../components/icons/ExtensionsIcon";
 import ContactIcon from "../components/icons/ContactIcon";
 import SourceControlIcon from "../components/icons/SourceControlIcon";
+/* img import */
+import hello from "../assets/images/wave-hello.gif";
+/* CSS import */
+import style from "../styles/Home.module.css";
 
 function Home() {
   return (

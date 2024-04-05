@@ -16,11 +16,18 @@ import TsconfigIcon from "./icons/TsconfigIcon";
 
 import MenuItem from "./sidebar_item/MenuItem";
 import PathItem from "./sidebar_item/PathItem";
+import CssIcon from "./icons/CssIcon";
+import FolderCssOpenIcon from "./icons/FolderCssOpenIcon";
+import FolderCssIcon from "./icons/FolderCssIcon";
 
 function SideBarText() {
-  const [open, setOpen] = useState(false);
-  const toggleClick = () => {
-    setOpen((prev) => !prev);
+  const [openCom, setOpenCom] = useState(false);
+  const [openStyle, setOpenStyle] = useState(false);
+  const comToggle = () => {
+    setOpenCom((prev) => !prev);
+  };
+  const styleToggle = () => {
+    setOpenStyle((prev) => !prev);
   };
   return (
     <>
@@ -51,13 +58,13 @@ function SideBarText() {
               depth={false}
             />
             <PathItem
-              onClick={toggleClick}
-              Arrow={open ? ArrowDownIcon : ArrowRightIcon}
-              Icon={open ? FolderComponentsOpenIcon : FolderComponentsIcon}
-              title={open ? "components" : "Open! 👐"}
+              onClick={comToggle}
+              Arrow={openCom ? ArrowDownIcon : ArrowRightIcon}
+              Icon={openCom ? FolderComponentsOpenIcon : FolderComponentsIcon}
+              title={openCom ? "components" : "Open! 👐"}
               depth={true}
             />
-            {open && (
+            {openCom && (
               <>
                 <PathItem
                   path="/"
@@ -77,10 +84,21 @@ function SideBarText() {
                   title="Projects.tsx"
                   deepDepth={true}
                 />
+              </>
+            )}
+            <PathItem
+              onClick={styleToggle}
+              Arrow={openStyle ? ArrowDownIcon : ArrowRightIcon}
+              Icon={openStyle ? FolderCssOpenIcon : FolderCssIcon}
+              title={openStyle ? "styles" : "Open! 👐"}
+              depth={true}
+            />
+            {openStyle && (
+              <>
                 <PathItem
                   path="/contact"
-                  Icon={ReactIcon}
-                  title="Contact.tsx"
+                  Icon={CssIcon}
+                  title="Contact.css"
                   deepDepth={true}
                 />
               </>
