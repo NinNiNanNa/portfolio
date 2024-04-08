@@ -1,0 +1,152 @@
+.wrap {
+  padding: 50px 12%;
+  height: calc(100vh - 100px);
+  font-family: "D2Coding", sans-serif;
+  font-weight: 300;
+  overflow-y: scroll;
+}
+.content_wrap {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+.img {
+  margin-right: 30px;
+  width: 30%;
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.content {
+  width: 70%;
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+.accent1 {
+  font-size: 25px;
+  color: violet;
+}
+.accent2 {
+  font-size: 25px;
+  color: turquoise;
+}
+h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.text_wrap {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  p {
+    font-size: 18px;
+    line-height: 200%;
+  }
+}
+
+.skills_wrap {
+  margin: 15px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.skills_item {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px #000;
+  svg {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+}
+/* Develop Skills */
+.skill:nth-child(1) {
+  color: #000;
+  background-color: #61dafb;
+}
+.skill:nth-child(2) {
+  background-color: #ff4154;
+}
+.skill:nth-child(3) {
+  background-color: #3578e5;
+}
+.skill:nth-child(4) {
+  background-color: #db7093;
+}
+.skill:nth-child(5) {
+  background-color: #3178c6;
+}
+.skill:nth-child(6) {
+  color: #000;
+  background-color: #f7df1e;
+}
+.skill:nth-child(7) {
+  background-color: #e34f26;
+}
+.skill:nth-child(8) {
+  background-color: #1572b6;
+}
+.skill:nth-child(9) {
+  background-color: #3578e5;
+}
+.skill:nth-child(10) {
+  background-color: #6db33f;
+}
+.skill:nth-child(11) {
+  background-color: #3578e5;
+}
+.skill:nth-child(12) {
+  color: #000;
+  background-color: #f8dc75;
+}
+.skill:nth-child(13) {
+  background-color: #02569b;
+}
+/* Infra & DB */
+.infra_db:nth-child(1) {
+  background-color: #232f3e;
+}
+.infra_db:nth-child(2) {
+  background-color: #f80000;
+}
+/* Tools */
+.tool:nth-child(1) {
+  background-color: #181717;
+}
+.tool:nth-child(2) {
+  background-color: #007acc;
+}
+.tool:nth-child(3) {
+  background-color: #2c2255;
+}
+.tool:nth-child(4) {
+  background-color: #f24e1e;
+}
+.tool:nth-child(5) {
+  color: #000;
+  background-color: #31a8ff;
+}
+.tool:nth-child(6) {
+  color: #000;
+  background-color: #ff9a00;
+}
