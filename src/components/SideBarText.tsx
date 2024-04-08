@@ -67,12 +67,6 @@ function SideBarText() {
             {openCom && (
               <>
                 <PathItem
-                  path="/"
-                  Icon={ReactIcon}
-                  title="Home.tsx"
-                  deepDepth={true}
-                />
-                <PathItem
                   path="/about"
                   Icon={ReactIcon}
                   title="About.tsx"

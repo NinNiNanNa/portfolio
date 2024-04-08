@@ -4,14 +4,15 @@ import style from "../styles/TopBar.module.css";
 import ReactIcon from "./icons/ReactIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import CssIcon from "./icons/CssIcon";
+import VScodeIcon from "./icons/VScodeIcon";
 
 function TopBar() {
   return (
     <>
       <div className={style.items_wrap}>
         <TopItem
-          Icon={ReactIcon}
-          title="Home.tsx"
+          Icon={VScodeIcon}
+          title="Get Started"
           path="/"
           CloseIcon={WindowCloseIcon}
         />
