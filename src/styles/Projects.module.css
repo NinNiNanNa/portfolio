@@ -1,0 +1,7 @@
+.wrap {
+  padding: 50px 12%;
+  height: calc(100vh - 100px);
+  font-family: "D2Coding", sans-serif;
+  font-weight: 300;
+  overflow-y: scroll;
+}
