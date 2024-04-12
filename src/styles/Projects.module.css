@@ -1,7 +1,107 @@
 .wrap {
-  padding: 50px 12%;
+  padding: 2% 5%;
   height: calc(100vh - 100px);
   font-family: "D2Coding", sans-serif;
   font-weight: 300;
   overflow-y: scroll;
+  color: var(--footer-text);
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.category_wrap {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  li {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--aside-bg);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  li:hover {
+    background-color: var(--footer-hover-bg);
+  }
+  li.active {
+    background-color: var(--footer-hover-bg);
+  }
+}
+
+.items_wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.item_wrap {
+  padding: 15px;
+  position: relative;
+  background-color: var(--aside-bg);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.project_type {
+  padding: 5px 0;
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--footer-hover-bg);
+  transform: translate(-50%, -50%) rotate(-43deg);
+}
+.thumnaile {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+.button_wrap {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--topbar-item-active-bg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+  }
+  a:hover {
+    background-color: var(--aside-hover-text);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    svg {
+      fill: #1e1e1e;
+    }
+  }
+}
+.content {
+  p {
+    margin-bottom: 15px;
+    line-height: 150%;
+  }
+  span {
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 150%;
+    color: var(--text);
+  }
+}
+.title_wrap {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

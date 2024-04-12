@@ -1,6 +1,6 @@
 const DATA_PATH = process.env.REACT_APP_DATA_PATH;
 
-interface IList {
+export interface IList {
   type: string;
   name: string;
   img: string;
@@ -10,7 +10,7 @@ interface IList {
   detail_notion?: string;
   detail_url?: string;
   drive_url?: string;
-  distribute: string;
+  distribute?: string;
   created_year: string;
 }
 
