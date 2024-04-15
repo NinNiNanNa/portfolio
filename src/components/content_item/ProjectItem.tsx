@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IGetResult } from "../../services/projects";
-/* react-icons import */
+/* icon import */
 import NotionIcon from "../icons/NotionIcon";
 import GithubIcon from "../icons/GithubIcon";
 import LinkIcon from "../icons/LinkIcon";
@@ -52,7 +52,11 @@ function ProjectItem({ projectData }: IProps) {
         {categories.map((item, idx) => (
           <li
             key={idx}
-            className={active === item.category ? style.active : ""}
+            className={
+              active === item.category
+                ? `${style.category_item} ${style.active}`
+                : style.category_item
+            }
             onClick={() => activeCategory(item.category)}
           >
             {item.category}
@@ -62,44 +66,66 @@ function ProjectItem({ projectData }: IProps) {
       <div className={style.items_wrap}>
         {data?.map((item, idx) => (
           <div key={idx} className={style.item_wrap}>
-            <div className={style.thumnaile}>
-              <img src={item.img} alt={item.name} />
+            <div className={style.thumnaile_wrap}>
+              <img className={style.img} src={item.img} alt={item.name} />
               <div className={style.button_wrap}>
                 {item.source_code && (
-                  <Link to={item.source_code} target="_blank">
+                  <Link
+                    className={style.button}
+                    to={item.source_code}
+                    target="_blank"
+                  >
                     <GithubIcon />
                   </Link>
                 )}
                 {item.detail_notion && (
-                  <Link to={item.detail_notion} target="_blank">
+                  <Link
+                    className={style.button}
+                    to={item.detail_notion}
+                    target="_blank"
+                  >
                     <NotionIcon />
                   </Link>
                 )}
                 {item.detail_url && (
-                  <Link to={item.detail_url} target="_blank">
+                  <Link
+                    className={style.button}
+                    to={item.detail_url}
+                    target="_blank"
+                  >
                     <DetailIcon />
                   </Link>
                 )}
                 {item.drive_url && (
-                  <Link to={item.drive_url} target="_blank">
+                  <Link
+                    className={style.button}
+                    to={item.drive_url}
+                    target="_blank"
+                  >
                     <GDriveIcon />
                   </Link>
                 )}
                 {item.distribute && (
-                  <Link to={item.distribute} target="_blank">
+                  <Link
+                    className={style.button}
+                    to={item.distribute}
+                    target="_blank"
+                  >
                     <LinkIcon />
                   </Link>
                 )}
               </div>
             </div>
-            <div className={style.content}>
+            <div>
               <div className={style.title_wrap}>
                 <h3>{item.name}</h3>
                 <h4>{item.created_year}</h4>
               </div>
-              <p>{item.description}</p>
+              <p className={style.text}>{item.description}</p>
               {item.tags.map((tag, idx) => (
-                <span key={idx}>#{tag} </span>
+                <span key={idx} className={style.tag_name}>
+                  #{tag}{" "}
+                </span>
               ))}
             </div>
             <div className={style.project_type}>{item.type}</div>

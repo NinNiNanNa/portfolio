@@ -7,9 +7,9 @@ import DocumentsIcon from "./icons/DocumentsIcon";
 import ExtensionsIcon from "./icons/ExtensionsIcon";
 import SettingIcon from "./icons/SettingIcon";
 import SourceControlIcon from "./icons/SourceControlIcon";
+import InfoIcon from "./icons/InfoIcon";
 /* CSS import */
 import style from "../styles/SideBarIcon.module.css";
-import InfoIcon from "./icons/InfoIcon";
 
 function SideBarIcon() {
   return (

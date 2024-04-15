@@ -12,7 +12,7 @@
 .icon_big {
   width: 30vw;
   height: 30vh;
-  fill: var(--vscode-fill);
+  fill: var(--dark-gray-600);
 }
 
 .title_wrap {
@@ -20,13 +20,13 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  h1 {
-    font-size: 50px;
-  }
-  img {
-    margin-left: 15px;
-    height: 50px;
-  }
+}
+.title {
+  font-size: 50px;
+}
+.image {
+  margin-left: 15px;
+  height: 50px;
 }
 
 .list_item {
@@ -38,11 +38,12 @@
 .icon_title_wrap {
   width: 150px;
   text-align: right;
-  h3 {
-    font-weight: normal;
-    color: var(--home-text);
-  }
 }
+.icon_title {
+  font-weight: normal;
+  color: var(--light-gray-200);
+}
+
 .icon_content_wrap {
   display: flex;
   align-items: center;
@@ -52,12 +53,13 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: var(--home-icon-bg);
-  span {
-    margin-left: 5px;
-    font-size: 18px;
-  }
+  background-color: var(--very-dark-gray-200);
 }
+.file {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
 .plus {
   margin: 0 5px;
 }

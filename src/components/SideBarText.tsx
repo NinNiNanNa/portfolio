@@ -1,5 +1,7 @@
 import { useState } from "react";
-import style from "../styles/SideBarText.module.css";
+import MenuItem from "./sidebar_item/MenuItem";
+import PathItem from "./sidebar_item/PathItem";
+/* icon import */
 import MoreIcon from "./icons/MoreIcon";
 import ArrowDownIcon from "./icons/ArrowDownIcon";
 import ArrowRightIcon from "./icons/ArrowRightIcon";
@@ -13,12 +15,11 @@ import NodejsIcon from "./icons/NodejsIcon";
 import GitIcon from "./icons/GitIcon";
 import ReadmeIcon from "./icons/ReadmeIcon";
 import TsconfigIcon from "./icons/TsconfigIcon";
-
-import MenuItem from "./sidebar_item/MenuItem";
-import PathItem from "./sidebar_item/PathItem";
 import CssIcon from "./icons/CssIcon";
 import FolderCssOpenIcon from "./icons/FolderCssOpenIcon";
 import FolderCssIcon from "./icons/FolderCssIcon";
+/* CSS import */
+import style from "../styles/SideBarText.module.css";
 
 function SideBarText() {
   const [openCom, setOpenCom] = useState(false);
@@ -34,11 +35,11 @@ function SideBarText() {
       <div className={style.sidebar_wrap}>
         <div>
           <div className={style.sidebar_header}>
-            <h6>EXPLORER</h6>
+            <h6 className={style.sidebar_title}>EXPLORER</h6>
             <MoreIcon className={style.icon_more} />
           </div>
           <MenuItem Arrow={ArrowDownIcon} title="PORTFOLIO" />
-          <div className={style.sidebar_content}>
+          <div>
             <PathItem
               Arrow={ArrowRightIcon}
               Icon={FolderNodeIcon}

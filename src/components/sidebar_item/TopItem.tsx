@@ -20,7 +20,7 @@ function TopItem({ Icon, title, path, CloseIcon }: IProps) {
         }`}
       >
         <Icon className={style.icon_theme} />
-        <h5>{title}</h5>
+        <h5 className={style.title}>{title}</h5>
         <div className={style.icon_close_wrap}>
           <CloseIcon className={style.icon_close} />
         </div>

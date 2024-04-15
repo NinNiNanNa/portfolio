@@ -1,10 +1,11 @@
 import TopItem from "./sidebar_item/TopItem";
-/* CSS import */
-import style from "../styles/TopBar.module.css";
+/* icon import */
 import ReactIcon from "./icons/ReactIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import CssIcon from "./icons/CssIcon";
 import VScodeIcon from "./icons/VScodeIcon";
+/* CSS import */
+import style from "../styles/TopBar.module.css";
 
 function TopBar() {
   return (

@@ -1,15 +1,17 @@
-import style from "../styles/Footer.module.css";
+/* icon import */
 import BellIcon from "./icons/BellIcon";
 import CircleCloseIcon from "./icons/CircleCloseIcon";
 import ExclamationIcon from "./icons/ExclamationIcon";
 import PrettierIcon from "./icons/PrettierIcon";
 import RemoteIcon from "./icons/RemoteIcon";
 import SourceControlIcon from "./icons/SourceControlIcon";
+/* CSS import */
+import style from "../styles/Footer.module.css";
 
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className={style.footer_wrap}>
         <div className={style.btn_wrap}>
           <div className={style.remote_icon_wrap}>
             <RemoteIcon />

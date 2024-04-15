@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+/* CSS import */
 import style from "../../styles/SideBarText.module.css";
 
 interface IProps {

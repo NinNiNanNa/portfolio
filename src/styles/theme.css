@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text: #cccccc;
   --header-bg: #3c3c3c;
   --header-hover-bg: #4b4b4b;
@@ -26,6 +26,40 @@
   --css-declarationBlock: #fff;
   --css-property: #68cdfe;
   --css-value: #ce9178;
+} */
+
+:root {
+  --white: #ffffff;
+  --yellow: #ffd70e;
+
+  --mandarin-50: #ce9178;
+
+  --light-gray-50: #cccccc;
+  --light-gray-100: #858585;
+  --light-gray-200: #707070;
+
+  --dark-gray-50: #4b4b4b;
+  --dark-gray-100: #474747;
+  --dark-gray-200: #3c3c3c;
+  --dark-gray-300: #343535;
+  --dark-gray-400: #333333;
+  --dark-gray-500: #252526;
+  --dark-gray-600: #151515;
+
+  --very-dark-gray-50: #37373d;
+  --very-dark-gray-100: #2a2d2e;
+  --very-dark-gray-200: #2c2c2c;
+  --very-dark-gray-300: #2d2d2d;
+  --very-dark-gray-400: #1e1e1e;
+
+  --blue-50: #68cdfe;
+  --blue-100: #007acc;
+  --blue-200: #1e85ca;
+  --blue-300: #007fd4;
+  --blue-400: rgba(0, 127, 212, 0.3);
+
+  --green-50: #16825d;
+  --green-100: #308b6d;
 }
 
 [data-theme="light"] {

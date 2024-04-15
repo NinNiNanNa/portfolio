@@ -16,7 +16,7 @@ function Projects() {
         <div>Loading...</div>
       ) : (
         <div className={style.wrap}>
-          <h1>💻 It's my works! 💻</h1>
+          <h1 className={style.title}>💻 It's my works! 💻</h1>
           <ProjectItem projectData={data} />
         </div>
       )}

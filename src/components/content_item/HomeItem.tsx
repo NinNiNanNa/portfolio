@@ -13,7 +13,7 @@ function HomeItem({ MenuIcon, title, ThemeIcon, fileName }: IProps) {
     <>
       <div className={style.list_item}>
         <div className={style.icon_title_wrap}>
-          <h3>{title}</h3>
+          <h3 className={style.icon_title}>{title}</h3>
         </div>
         <div className={style.icon_content_wrap}>
           <div className={style.icon_wrap}>
@@ -24,7 +24,7 @@ function HomeItem({ MenuIcon, title, ThemeIcon, fileName }: IProps) {
               <div className={style.plus}>+</div>
               <div className={style.icon_wrap}>
                 <ThemeIcon className={style.icon} />
-                <span>{fileName}</span>
+                <span className={style.file}>{fileName}</span>
               </div>
             </>
           ) : null}

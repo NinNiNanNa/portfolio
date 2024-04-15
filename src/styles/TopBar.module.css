@@ -1,18 +1,18 @@
 .items_wrap {
-  background-color: var(--sidebar-bg);
+  background-color: var(--dark-gray-500);
 }
 .item_wrap {
   padding: 7px 10px;
   display: inline-flex;
   align-items: center;
-  border-left: 1px solid var(--topbar-item-active-bg);
-  background-color: var(--topbar-item-bg);
-  h5 {
-    font-weight: normal;
-  }
+  border-left: 1px solid var(--very-dark-gray-400);
+  background-color: var(--very-dark-gray-300);
 }
 .item_wrap.active {
-  background-color: var(--topbar-item-active-bg);
+  background-color: var(--very-dark-gray-400);
+}
+.title {
+  font-weight: normal;
 }
 
 .icon_theme {
@@ -26,7 +26,7 @@
   border-radius: 5px;
 }
 .icon_close_wrap:hover {
-  background-color: var(--close-hover-bg);
+  background-color: var(--dark-gray-300);
 }
 .icon_close {
   width: 13px;

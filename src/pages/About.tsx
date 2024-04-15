@@ -1,6 +1,6 @@
+import Skills from "../components/content_item/Skills";
 /* img import */
 import profile from "../assets/images/profile.png";
-import Skills from "../components/content_item/Skills";
 /* CSS import */
 import style from "../styles/About.module.css";
 
@@ -9,18 +9,18 @@ function About() {
     <>
       <div className={style.wrap}>
         <div className={style.content_wrap}>
-          <div className={style.img}>
-            <img src={profile} alt="profile" />
+          <div className={style.img_wrap}>
+            <img className={style.img} src={profile} alt="profile" />
           </div>
           <div className={style.content}>
-            <h1>
+            <h1 className={style.intro_title}>
               안녕하세요! 👩‍💻
               <br />
               원하는 기능을 구현하기 위해 고군분투하는{" "}
               <span className={style.accent1}>프론트엔드 개발자, </span>
               <span className={style.accent2}>김소진</span>입니다.
             </h1>
-            <p>
+            <p className={style.intro_text}>
               새로운 기술에 대한 열정과 학습에 대한 열망이 저의 개발 여정을
               이끌고 있습니다.
               <br />
@@ -37,28 +37,38 @@ function About() {
             </p>
           </div>
         </div>
-        <h2>4가지 키워드로 말하는 "나"</h2>
+        <h2 className={style.title}>4가지 키워드로 말하는 "나"</h2>
         <div className={style.content_wrap}></div>
-        <h2>💼 Career</h2>
+        <h2 className={style.title}>💼 Career</h2>
         <div className={style.text_wrap}>
-          <h4>제이엔이시스텍 (2020.11 ~ 2023.04)</h4>
-          <p>
+          <h4 className={style.text_title}>
+            제이엔이시스텍 (2020.11 ~ 2023.04)
+          </h4>
+          <p className={style.text}>
             - HILSSimulation을 활용한 DigitalTwin의 구현과 smartfactory 운용
             (정직원/연구원)
           </p>
         </div>
-        <h2>🎓 Education</h2>
+        <h2 className={style.title}>🎓 Education</h2>
         <div className={style.text_wrap}>
-          <h4>더조은컴퓨터아카데미 - K디지털트레이닝 (2023.05 ~ 2023.12)</h4>
-          <p>
+          <h4 className={style.text_title}>
+            더조은컴퓨터아카데미 - K디지털트레이닝 (2023.05 ~ 2023.12)
+          </h4>
+          <p className={style.text}>
             - 클라우드(AWS)환경에서 개발하는 풀스택(프론트엔드&백엔드)
             자바(JAVA) 웹&앱
           </p>
-          <h4>더조은컴퓨터아카데미 - 국가기간전략훈련 (2020.04 ~ 2020.09)</h4>
-          <p>- 웹디자인(웹퍼블리셔) 프론트엔드실무자양성_A</p>
-          <h4>신구대학교 - IT미디어학과 웹IT전공 (2016.03 ~ 2020.02)</h4>
+          <h4 className={style.text_title}>
+            더조은컴퓨터아카데미 - 국가기간전략훈련 (2020.04 ~ 2020.09)
+          </h4>
+          <p className={style.text}>
+            - 웹디자인(웹퍼블리셔) 프론트엔드실무자양성_A
+          </p>
+          <h4 className={style.text_title}>
+            신구대학교 - IT미디어학과 웹IT전공 (2016.03 ~ 2020.02)
+          </h4>
         </div>
-        <h2>🛠 Tech Skills</h2>
+        <h2 className={style.title}>🛠 Tech Skills</h2>
         <div className={style.text_wrap}>
           <Skills />
         </div>

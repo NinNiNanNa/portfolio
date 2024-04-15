@@ -1,15 +1,17 @@
 import { Tooltip } from "react-tooltip";
-import style from "../styles/Header.module.css";
+/* icon import */
 import SearchIcon from "./icons/SearchIcon";
 import VScodeIcon from "./icons/VScodeIcon";
 import WindowCloseIcon from "./icons/WindowCloseIcon";
 import WindowMaximizeIcon from "./icons/WindowMaximizeIcon";
 import WindowMinimizeIcon from "./icons/WindowMinimizeIcon";
+/* CSS import */
+import style from "../styles/Header.module.css";
 
 function Header() {
   return (
     <>
-      <header>
+      <header className={style.header_wrap}>
         <div className={style.left_btn_wrap}>
           <VScodeIcon className={style.icon} />
           <ul className={style.menu_items}>

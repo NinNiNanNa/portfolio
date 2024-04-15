@@ -6,10 +6,11 @@ function Contact() {
   return (
     <>
       <div className={style.wrap}>
-        <h1>📞 Contact with me! 📞</h1>
+        <h1 className={style.title}>📞 Contact with me! 📞</h1>
         <div className={style.selector}>.socials {"{"}</div>
         <div className={style.declarationBlock}>
           <ContactItem prop="email" value="kimsojin3011@gmail.com" />
+          <ContactItem prop="notion" value="준비중" path="" />
           <ContactItem
             prop="github"
             value="NinNiNanNa"
