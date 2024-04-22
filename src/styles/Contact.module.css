@@ -1,21 +1,31 @@
 .wrap {
-  padding: 30px;
+  padding: 2% 5%;
   font-family: "D2Coding", sans-serif;
   font-weight: 300;
 }
-.title {
-  margin-bottom: 30px;
+.title_wrap {
+  margin-bottom: 20px;
+}
+.title_wrap h1 {
+  font-size: 25px;
+  color: var(--white);
+}
+.title_wrap p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--light-gray-100);
 }
 
 .selector {
   color: var(--yellow);
-  font-size: 25px;
+  font-size: 20px;
   line-height: 150%;
 }
 .declarationBlock {
   margin-left: 30px;
   color: var(--white);
-  font-size: 25px;
+  font-size: 20px;
   line-height: 150%;
 }
 .declaration {
@@ -31,4 +41,80 @@
 }
 .value:hover {
   text-decoration: underline;
+}
+
+input,
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  outline: none;
+  border: none;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--very-dark-gray-300) inset;
+  -webkit-text-fill-color: white;
+}
+.emailForm {
+  margin-top: 3%;
+}
+.form_wrap {
+  display: flex;
+  gap: 20px;
+}
+.form_item {
+  width: 50%;
+}
+.input_wrap {
+  position: relative;
+}
+.input_wrap label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--white);
+}
+.input_wrap input,
+.input_wrap textarea {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--very-dark-gray-300);
+  border: 1px solid var(--dark-gray-50);
+  caret-color: var(--white);
+  transition: all 0.3s;
+}
+.input_wrap input:focus,
+.input_wrap textarea:focus {
+  border: 1px solid var(--light-gray-50);
+}
+.input_wrap textarea {
+  resize: none;
+  height: 272px;
+  font-size: 18px;
+  line-height: 150%;
+}
+.input_wrap span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 14px;
+  color: #ff2e2e;
+}
+.sendBtn {
+  float: right;
+  padding: 15px 50px;
+  background-color: var(--blue-200);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sendBtn:hover {
+  background-color: var(--blue-50);
 }

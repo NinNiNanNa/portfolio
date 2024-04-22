@@ -1,4 +1,5 @@
 import ContactItem from "../components/content_item/ContactItem";
+import EmailForm from "../components/content_item/EmailForm";
 /* CSS import */
 import style from "../styles/Contact.module.css";
 
@@ -6,10 +7,12 @@ function Contact() {
   return (
     <>
       <div className={style.wrap}>
-        <h1 className={style.title}>📞 Contact with me! 📞</h1>
+        <div className={style.title_wrap}>
+          <h1>📞 Contact with me! 📞</h1>
+        </div>
         <div className={style.selector}>.socials {"{"}</div>
         <div className={style.declarationBlock}>
-          <ContactItem prop="email" value="kimsojin3011@gmail.com" />
+          <ContactItem prop="email" value="ninninanna3011@gmail.com" />
           <ContactItem prop="notion" value="준비중" path="" />
           <ContactItem
             prop="github"
@@ -20,6 +23,13 @@ function Contact() {
           <ContactItem prop="tel" value="010-9043-8348" />
         </div>
         <div className={style.selector}>{"}"}</div>
+        <div className={style.emailForm}>
+          <div className={style.title_wrap}>
+            <h1>Send me an Email 📨</h1>
+            <p>메일을 보내주시면, 평일 기준 3일 이내에 답장 드릴게요!😁</p>
+          </div>
+          <EmailForm />
+        </div>
       </div>
     </>
   );
