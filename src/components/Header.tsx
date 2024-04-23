@@ -31,7 +31,15 @@ function Header() {
             data-tooltip-id="tooltip"
             data-tooltip-content="Visual Studio Code 스타일의 포트폴리오 입니다! 🙋"
           >
-            <Tooltip id="tooltip" border="1px solid var(--aside-text)" />
+            <Tooltip
+              id="tooltip"
+              style={{
+                backgroundColor: "var(--toolTip-bg)",
+                color: "var(--text-01)",
+                boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.1)",
+              }}
+              border="1px solid var(--toolTip-border)"
+            />
             <SearchIcon className={style.icon_search} />
             portfolio
           </div>

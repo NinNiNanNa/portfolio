@@ -23,7 +23,15 @@ function IconItem({ Icon, path, title, target }: IProps) {
         data-tooltip-id="tooltip"
         data-tooltip-content={title}
       >
-        <Tooltip id="tooltip" />
+        <Tooltip
+          id="tooltip"
+          style={{
+            backgroundColor: "var(--toolTip-bg)",
+            color: "var(--text-01)",
+            boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.1)",
+          }}
+          border="1px solid var(--toolTip-border)"
+        />
         <Icon className={style.icon} />
       </Link>
     </>

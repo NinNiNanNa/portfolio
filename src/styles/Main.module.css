@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
   height: calc(100vh - 59px);
-  background-color: var(--very-dark-gray-400);
+  background-color: var(--background-04);
 }
 .content_wrap {
   width: 100%;

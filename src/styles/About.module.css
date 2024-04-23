@@ -32,11 +32,11 @@
 }
 .accent1 {
   font-size: 25px;
-  color: violet;
+  color: var(--text-08);
 }
 .accent2 {
   font-size: 25px;
-  color: turquoise;
+  color: var(--text-09);
 }
 .title {
   margin-bottom: 15px;
@@ -70,7 +70,7 @@
   align-items: center;
   font-weight: bold;
   border-radius: 2px;
-  box-shadow: 5px 5px 5px #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .skills_item svg {
   margin-right: 10px;
@@ -84,15 +84,19 @@
   background-color: #61dafb;
 }
 .skill:nth-child(2) {
+  color: #fff;
   background-color: #ff4154;
 }
 .skill:nth-child(3) {
+  color: #fff;
   background-color: #3578e5;
 }
 .skill:nth-child(4) {
+  color: #fff;
   background-color: #db7093;
 }
 .skill:nth-child(5) {
+  color: #fff;
   background-color: #3178c6;
 }
 .skill:nth-child(6) {
@@ -100,18 +104,23 @@
   background-color: #f7df1e;
 }
 .skill:nth-child(7) {
+  color: #fff;
   background-color: #e34f26;
 }
 .skill:nth-child(8) {
+  color: #fff;
   background-color: #1572b6;
 }
 .skill:nth-child(9) {
+  color: #fff;
   background-color: #3578e5;
 }
 .skill:nth-child(10) {
+  color: #fff;
   background-color: #6db33f;
 }
 .skill:nth-child(11) {
+  color: #fff;
   background-color: #3578e5;
 }
 .skill:nth-child(12) {
@@ -119,26 +128,33 @@
   background-color: #f8dc75;
 }
 .skill:nth-child(13) {
+  color: #fff;
   background-color: #02569b;
 }
 /* Infra & DB */
 .infra_db:nth-child(1) {
+  color: #fff;
   background-color: #232f3e;
 }
 .infra_db:nth-child(2) {
+  color: #fff;
   background-color: #f80000;
 }
 /* Tools */
 .tool:nth-child(1) {
+  color: #fff;
   background-color: #181717;
 }
 .tool:nth-child(2) {
+  color: #fff;
   background-color: #007acc;
 }
 .tool:nth-child(3) {
+  color: #fff;
   background-color: #2c2255;
 }
 .tool:nth-child(4) {
+  color: #fff;
   background-color: #f24e1e;
 }
 .tool:nth-child(5) {

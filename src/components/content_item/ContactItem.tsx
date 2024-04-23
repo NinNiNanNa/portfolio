@@ -37,8 +37,11 @@ function ContactItem({ prop, value, path }: IProps) {
                 fontSize: "15px",
                 padding: "0 15px",
                 marginLeft: "15px",
+                backgroundColor: "var(--toolTip-bg)",
+                color: "var(--text-01)",
+                boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.1)",
               }}
-              border="1px solid #ccc"
+              border="1px solid var(--toolTip-border)"
             />
             {value}
           </Link>
@@ -56,8 +59,11 @@ function ContactItem({ prop, value, path }: IProps) {
                 fontSize: "15px",
                 padding: "0 15px",
                 marginLeft: "15px",
+                backgroundColor: "var(--toolTip-bg)",
+                color: "var(--text-01)",
+                boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.1)",
               }}
-              border="1px solid #ccc"
+              border="1px solid var(--toolTip-border)"
             />
             {value}
           </div>

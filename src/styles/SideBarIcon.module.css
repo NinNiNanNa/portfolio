@@ -2,10 +2,11 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--dark-gray-400);
+  background-color: var(--background-12);
 }
 
 .icon_wrap {
+  position: relative;
   width: 50px;
   height: 50px;
   display: flex;
@@ -14,16 +15,16 @@ aside {
   cursor: pointer;
 }
 .icon_wrap:hover .icon {
-  fill: var(--white);
+  fill: var(--icon-02);
 }
 .icon_wrap.active {
-  border-left: 3px solid #fff;
+  border-left: 3px solid var(--border-06);
 }
 .icon_wrap.active .icon {
-  fill: var(--white);
+  fill: var(--icon-02);
 }
 
 .icon {
   width: 23px;
-  color: var(--light-gray-100);
+  color: var(--text-03);
 }

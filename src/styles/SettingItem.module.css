@@ -1,0 +1,29 @@
+.wrap {
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+  width: 200px;
+}
+
+.theme_wrap {
+  border: 1px solid var(--border-02);
+  background-color: var(--background-14);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.theme_item {
+  border-bottom: 1px solid var(--border-02);
+}
+.theme_item:last-child {
+  border-bottom: none;
+}
+.text {
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.text:hover {
+  background-color: var(--background-11);
+  color: white;
+}

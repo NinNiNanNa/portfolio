@@ -12,7 +12,7 @@
 .icon_big {
   width: 30vw;
   height: 30vh;
-  fill: var(--dark-gray-600);
+  fill: var(--icon-01);
 }
 
 .title_wrap {
@@ -41,7 +41,7 @@
 }
 .icon_title {
   font-weight: normal;
-  color: var(--light-gray-200);
+  color: var(--text-04);
 }
 
 .icon_content_wrap {
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: var(--very-dark-gray-200);
+  background-color: var(--background-06);
 }
 .file {
   margin-left: 5px;

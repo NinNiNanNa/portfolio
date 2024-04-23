@@ -1,15 +1,15 @@
 .items_wrap {
-  background-color: var(--dark-gray-500);
+  background-color: var(--background-02);
 }
 .item_wrap {
   padding: 7px 10px;
   display: inline-flex;
   align-items: center;
-  border-left: 1px solid var(--very-dark-gray-400);
-  background-color: var(--very-dark-gray-300);
+  border-left: 1px solid var(--background-04);
+  background-color: var(--background-05);
 }
 .item_wrap.active {
-  background-color: var(--very-dark-gray-400);
+  background-color: var(--background-04);
 }
 .title {
   font-weight: normal;
@@ -26,7 +26,7 @@
   border-radius: 5px;
 }
 .icon_close_wrap:hover {
-  background-color: var(--dark-gray-300);
+  background-color: var(--background-09);
 }
 .icon_close {
   width: 13px;

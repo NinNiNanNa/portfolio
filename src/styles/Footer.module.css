@@ -7,9 +7,9 @@
   justify-content: space-between;
   width: 100%;
   height: 25px;
-  background-color: var(--blue-100);
+  background-color: var(--background-07);
   font-size: 14px;
-  color: var(--white);
+  color: var(--icon-02);
 }
 .btn_wrap {
   display: flex;
@@ -23,16 +23,16 @@
   cursor: pointer;
 }
 .icon_wrap:hover {
-  background-color: var(--blue-200);
+  background-color: var(--button-01);
 }
 .remote_icon_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 34px;
-  background-color: var(--green-50);
+  background-color: var(--button-02);
   cursor: pointer;
 }
 .remote_icon_wrap:hover {
-  background-color: var(--green-100);
+  background-color: var(--button-04);
 }

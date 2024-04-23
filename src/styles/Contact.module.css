@@ -8,23 +8,23 @@
 }
 .title_wrap h1 {
   font-size: 25px;
-  color: var(--white);
+  color: var(--text-01);
 }
 .title_wrap p {
   margin-top: 5px;
   font-size: 14px;
   font-style: italic;
-  color: var(--light-gray-100);
+  color: var(--text-03);
 }
 
 .selector {
-  color: var(--yellow);
+  color: var(--text-06);
   font-size: 20px;
   line-height: 150%;
 }
 .declarationBlock {
   margin-left: 30px;
-  color: var(--white);
+  color: var(--text-01);
   font-size: 20px;
   line-height: 150%;
 }
@@ -32,11 +32,11 @@
   display: flex;
 }
 .property {
-  color: var(--blue-50);
+  color: var(--text-05);
 }
 .value {
   margin-left: 10px;
-  color: var(--mandarin-50);
+  color: var(--text-07);
   cursor: pointer;
 }
 .value:hover {
@@ -56,8 +56,8 @@ button {
   border: none;
 }
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--very-dark-gray-300) inset;
-  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0 1000px var(--background-05) inset;
+  -webkit-text-fill-color: var(--text-01);
 }
 .emailForm {
   margin-top: 3%;
@@ -76,7 +76,7 @@ input:-webkit-autofill {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: var(--white);
+  color: var(--text-01);
 }
 .input_wrap input,
 .input_wrap textarea {
@@ -84,15 +84,15 @@ input:-webkit-autofill {
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
-  color: var(--white);
-  background-color: var(--very-dark-gray-300);
-  border: 1px solid var(--dark-gray-50);
-  caret-color: var(--white);
+  color: var(--text-01);
+  background-color: var(--background-05);
+  border: 1px solid var(--border-01);
+  caret-color: var(--text-01);
   transition: all 0.3s;
 }
 .input_wrap input:focus,
 .input_wrap textarea:focus {
-  border: 1px solid var(--light-gray-50);
+  border: 1px solid var(--border-05);
 }
 .input_wrap textarea {
   resize: none;
@@ -110,11 +110,11 @@ input:-webkit-autofill {
 .sendBtn {
   float: right;
   padding: 15px 50px;
-  background-color: var(--blue-200);
-  color: var(--white);
+  background-color: var(--button-06);
+  color: var(--text-01);
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .sendBtn:hover {
-  background-color: var(--blue-50);
+  background-color: var(--button-05);
 }
