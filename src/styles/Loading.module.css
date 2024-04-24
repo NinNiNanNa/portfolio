@@ -1,0 +1,42 @@
+@keyframes blurText {
+  0% {
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+.loading_wrap {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "D2Coding", sans-serif;
+}
+.words {
+  margin: 0 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-01);
+  filter: blur(0);
+  animation: blurText 1.5s 0s infinite linear alternate;
+}
+.words:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.words:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.words:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.words:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.words:nth-child(6) {
+  animation-delay: 1s;
+}
+.words:nth-child(7) {
+  animation-delay: 1.2s;
+}
