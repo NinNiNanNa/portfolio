@@ -48,13 +48,13 @@
 .project_type {
   padding: 5px 0;
   position: absolute;
-  top: 12%;
-  left: 12%;
+  top: 15%;
+  left: 15%;
   width: 100%;
   font-size: 18px;
   text-align: center;
   background-color: var(--button-06);
-  transform: translate(-50%, -50%) rotate(-43deg);
+  transform: translate(-50%, -50%) rotate(-40deg);
 }
 .thumnaile_wrap {
   position: relative;

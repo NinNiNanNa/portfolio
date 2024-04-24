@@ -6,7 +6,6 @@ import NotionIcon from "../icons/NotionIcon";
 import GithubIcon from "../icons/GithubIcon";
 import LinkIcon from "../icons/LinkIcon";
 import GDriveIcon from "../icons/GDriveIcon";
-import DetailIcon from "../icons/DetailIcon";
 /* CSS import */
 import style from "../../styles/Projects.module.css";
 
@@ -15,16 +14,13 @@ const categories = [
     category: "all",
   },
   {
-    category: "🙍‍♀️ personal",
+    category: "📂 Company Project",
   },
   {
-    category: "🏢 company",
+    category: "📂 Side Project",
   },
   {
-    category: "common",
-  },
-  {
-    category: "👩‍👩‍👧 team",
+    category: "📂 Toy Project",
   },
 ];
 
@@ -78,22 +74,13 @@ function ProjectItem({ projectData }: IProps) {
                     <GithubIcon />
                   </Link>
                 )}
-                {item.detail_notion && (
+                {item.notion_url && (
                   <Link
                     className={style.button}
-                    to={item.detail_notion}
+                    to={item.notion_url}
                     target="_blank"
                   >
                     <NotionIcon />
-                  </Link>
-                )}
-                {item.detail_url && (
-                  <Link
-                    className={style.button}
-                    to={item.detail_url}
-                    target="_blank"
-                  >
-                    <DetailIcon />
                   </Link>
                 )}
                 {item.drive_url && (

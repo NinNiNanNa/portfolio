@@ -7,8 +7,7 @@ export interface IList {
   description: string;
   tags: string[];
   source_code?: string;
-  detail_notion?: string;
-  detail_url?: string;
+  notion_url?: string;
   drive_url?: string;
   distribute?: string;
   created_year: string;
