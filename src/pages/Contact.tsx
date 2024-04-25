@@ -13,7 +13,11 @@ function Contact() {
         <div className={style.selector}>.socials {"{"}</div>
         <div className={style.declarationBlock}>
           <ContactItem prop="email" value="ninninanna3011@gmail.com" />
-          <ContactItem prop="notion" value="준비중" path="" />
+          <ContactItem
+            prop="notion"
+            value="ninninanna notion"
+            path="https://ninninanna.notion.site/Welcome-sojin-s-portfolio-7458436b38054d0bb786faa3c197db36"
+          />
           <ContactItem
             prop="github"
             value="NinNiNanNa"
