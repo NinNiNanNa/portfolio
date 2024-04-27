@@ -1,8 +1,10 @@
-import Skills from "../components/content_item/Skills";
+import data from "../services/about";
+import Experience from "../components/about/Experience";
 /* img import */
 import profile from "../assets/images/profile.png";
 /* CSS import */
 import style from "../styles/About.module.css";
+import Skills from "../components/about/Skills";
 
 function About() {
   return (
@@ -10,7 +12,7 @@ function About() {
       <div className={style.wrap}>
         <div className={style.content_wrap}>
           <div className={style.img_wrap}>
-            <img className={style.img} src={profile} alt="profile" />
+            <img src={profile} alt="profile" />
           </div>
           <div className={style.content}>
             <h1 className={style.intro_title}>
@@ -37,41 +39,59 @@ function About() {
             </p>
           </div>
         </div>
-        <h2 className={style.title}>4가지 키워드로 말하는 "나"</h2>
-        <div className={style.content_wrap}></div>
-        <h2 className={style.title}>💼 Career</h2>
-        <div className={style.text_wrap}>
-          <h4 className={style.text_title}>
-            제이엔이시스텍 (2020.11 ~ 2023.04)
-          </h4>
-          <p className={style.text}>
-            - HILSSimulation을 활용한 DigitalTwin의 구현과 smartfactory 운용
-            (정직원/연구원)
-          </p>
+
+        <div className={style.animation_moveTop}>
+          <h2 className={style.title}>MY KEYWORD</h2>
+          <ul className={style.grid_wrap}>
+            <li className={style.grid_item}>
+              <div>
+                <span>01</span>METICULOUS
+              </div>
+              <p>
+                사소한 일에도 대충하는 법이 없어 작은 실수 하나까지도 신경쓰며
+                최상의 결과를 위해 노력합니다.
+              </p>
+            </li>
+            <li className={style.grid_item}>
+              <div>
+                <span>02</span>CURIOUS
+              </div>
+              <p>
+                호기심이 강해 새로운 것에 두려움이 없으며 내 것으로 만들기 위해
+                끊임없이 노력하는 성격의 보유자입니다.
+              </p>
+            </li>
+            <li className={style.grid_item}>
+              <div>
+                <span>03</span>COMMUNICATE
+              </div>
+              <p>
+                최상의 결과물을 위해 상대방의 의견을 항상 귀담아듣고, 작은
+                피드백도 놓치지 않겠습니다.
+              </p>
+            </li>
+            <li className={style.grid_item}>
+              <div>
+                <span>04</span>TENACITY
+              </div>
+              <p>
+                하는 일에 몰입하면 끝을 봐야되는 성격을 가져 힘든 일에도
+                포기하지 않고 좋은 결과를 위해 노력하겠습니다.
+              </p>
+            </li>
+          </ul>
         </div>
-        <h2 className={style.title}>🎓 Education</h2>
-        <div className={style.text_wrap}>
-          <h4 className={style.text_title}>
-            더조은컴퓨터아카데미 - K디지털트레이닝 (2023.05 ~ 2023.12)
-          </h4>
-          <p className={style.text}>
-            - 클라우드(AWS)환경에서 개발하는 풀스택(프론트엔드&백엔드)
-            자바(JAVA) 웹&앱
-          </p>
-          <h4 className={style.text_title}>
-            더조은컴퓨터아카데미 - 국가기간전략훈련 (2020.04 ~ 2020.09)
-          </h4>
-          <p className={style.text}>
-            - 웹디자인(웹퍼블리셔) 프론트엔드실무자양성_A
-          </p>
-          <h4 className={style.text_title}>
-            신구대학교 - IT미디어학과 웹IT전공 (2016.03 ~ 2020.02)
-          </h4>
-        </div>
-        <h2 className={style.title}>🛠 Tech Skills</h2>
-        <div className={style.text_wrap}>
-          <Skills />
-        </div>
+
+        <h2 className={style.title}>CAREER</h2>
+        <Experience data={data.career} icon="💼" />
+
+        <h2 className={style.title}>EDUCATION</h2>
+        <Experience data={data.education} icon="🎓" />
+
+        <h2 className={style.title}>TECH STACK</h2>
+        <Skills data={data.frontendSkills} title={"!-- FRONTEND SKILL"} />
+        <Skills data={data.backendSkills} title={"!-- BACKEND SKILL"} />
+        <Skills data={data.usingTool} title={"!-- USING TOOL"} />
       </div>
     </>
   );
