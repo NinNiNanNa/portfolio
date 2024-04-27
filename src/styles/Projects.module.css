@@ -27,6 +27,7 @@
 .category_wrap {
   margin-bottom: 15px;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   align-items: center;
   position: relative;
@@ -121,4 +122,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* 반응형 */
+@media all and (max-width: 1500px) {
+  .items_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 650px) {
+  .items_wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

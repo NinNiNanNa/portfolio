@@ -1,9 +1,25 @@
 .items_wrap {
+  width: 100%;
+  display: flex;
   background-color: var(--background-02);
+  overflow-x: auto;
 }
+.items_wrap::-webkit-scrollbar {
+  width: 8px;
+}
+
+.items_wrap::-webkit-scrollbar-track {
+  background: transparent;
+  border-left: 1px solid var(--icon-01);
+}
+.items_wrap::-webkit-scrollbar-thumb {
+  background: var(--background-01);
+  border-left: 1px solid var(--background-01);
+}
+
 .item_wrap {
   padding: 7px 10px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   border-left: 1px solid var(--background-04);
   background-color: var(--background-05);
@@ -13,6 +29,7 @@
 }
 .title {
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .icon_theme {

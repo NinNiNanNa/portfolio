@@ -82,3 +82,16 @@
   width: 13px;
   height: 13px;
 }
+
+/* 반응형 */
+@media all and (max-width: 1000px) {
+  .menu_item {
+    display: none;
+  }
+  .center_title_wrap {
+    flex-grow: 1;
+  }
+  .right_btn_wrap {
+    flex-grow: 1;
+  }
+}

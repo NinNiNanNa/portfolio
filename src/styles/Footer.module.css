@@ -36,3 +36,13 @@
 .remote_icon_wrap:hover {
   background-color: var(--button-04);
 }
+
+/* 반응형 */
+@media all and (max-width: 563px) {
+  .wrap {
+    height: calc(100vh - 110px);
+  }
+  .delete {
+    display: none;
+  }
+}

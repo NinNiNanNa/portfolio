@@ -31,7 +31,7 @@ function Footer() {
           </div>
         </div>
         <div className={style.btn_wrap}>
-          <div className={style.icon_wrap}>
+          <div className={`${style.icon_wrap} ${style.delete}`}>
             © 2024 Kim So Jin - Powered by React.js
           </div>
           <div className={style.icon_wrap}>

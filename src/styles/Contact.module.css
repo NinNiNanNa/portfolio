@@ -137,3 +137,13 @@ input:-webkit-autofill {
 .sendBtn:hover {
   background-color: var(--button-05);
 }
+
+/* 반응형 */
+@media all and (max-width: 1000px) {
+  .form_item {
+    width: 100%;
+  }
+  .form_wrap {
+    flex-direction: column;
+  }
+}

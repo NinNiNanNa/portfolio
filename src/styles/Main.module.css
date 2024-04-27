@@ -9,6 +9,7 @@
 }
 .content_wrap {
   width: 100%;
+  overflow: hidden;
 }
 .wrap {
   height: calc(100vh - 93px);
@@ -27,4 +28,11 @@
 .wrap::-webkit-scrollbar-thumb {
   background: var(--background-01);
   border-left: 1px solid var(--background-01);
+}
+
+/* 반응형 */
+@media all and (max-width: 563px) {
+  .wrap {
+    height: calc(100vh - 110px);
+  }
 }
