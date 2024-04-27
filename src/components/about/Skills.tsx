@@ -10,7 +10,7 @@ interface IProps {
 function Skills({ data, title }: IProps) {
   return (
     <>
-      <h3 className={style.skill_title}>{title}</h3>
+      <h3 className={style.sub_title}>{title}</h3>
       <div className={style.skill_container}>
         <ul className={style.skill_wrap}>
           {data.map((item, idx) => (

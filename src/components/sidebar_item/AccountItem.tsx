@@ -1,5 +1,3 @@
-/* img import */
-import profile from "../../assets/images/profile.png";
 /* CSS import */
 import style from "../../styles/AccountItem.module.css";
 
@@ -9,7 +7,10 @@ function AccountItem() {
       <div className={style.wrap}>
         <div className={style.profile_wrap}>
           <div className={style.image_wrap}>
-            <img src={profile} alt="profile" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/memogi02.png`}
+              alt="profile"
+            />
           </div>
           <ul className={style.profile}>
             <li>
@@ -20,6 +21,13 @@ function AccountItem() {
             </li>
             <li>
               ADDRESS :<span>경기도 성남시</span>
+            </li>
+            <li>CERTIFICATE</li>
+            <li>
+              -<span>2018 . 04 GTQ(포토샵) 1급</span>
+            </li>
+            <li>
+              -<span>2017 . 11 운전면허 2종</span>
             </li>
             <li>
               MBTI :<span>ISTJ</span>

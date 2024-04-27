@@ -1,7 +1,24 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveTop {
+  from {
+    top: 300px;
+  }
+  to {
+    top: 0;
+  }
+}
+
 .wrap {
-  padding: 2% 5%;
-  font-family: "D2Coding", sans-serif;
-  font-weight: 300;
+  margin: 2% 5%;
+  animation: opacity 1.5s both linear;
+  overflow: hidden;
 }
 .title_wrap {
   margin-bottom: 20px;
@@ -61,6 +78,8 @@ input:-webkit-autofill {
 }
 .emailForm {
   margin-top: 3%;
+  position: relative;
+  animation: moveTop 1s both linear;
 }
 .form_wrap {
   display: flex;
@@ -80,7 +99,7 @@ input:-webkit-autofill {
 }
 .input_wrap input,
 .input_wrap textarea {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
@@ -96,7 +115,7 @@ input:-webkit-autofill {
 }
 .input_wrap textarea {
   resize: none;
-  height: 272px;
+  height: 246px;
   font-size: 18px;
   line-height: 150%;
 }

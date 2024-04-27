@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { IGetResult, getProjects } from "../services/projects";
 import Loading from "../components/Loading";
-import ProjectItem from "../components/content_item/ProjectItem";
+import ProjectItem from "../components/project/ProjectItem";
 /* CSS import */
 import style from "../styles/Projects.module.css";
 

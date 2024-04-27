@@ -1,39 +1,78 @@
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveTop {
+  from {
+    top: 300px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-01);
+  }
+}
+
 .wrap {
-  padding: 15px;
-  height: calc(100vh - 100px);
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: "D2Coding", sans-serif;
-  font-weight: 300;
+  overflow: hidden;
 }
 
 .icon_big {
   width: 30vw;
   height: 30vh;
   fill: var(--icon-01);
+  animation: scale 1s both linear, opacity 1s both linear;
 }
 
 .title_wrap {
-  width: 100%;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
 }
-.title {
+.title_wrap h1 {
   font-size: 40px;
-}
-.image {
-  margin-left: 15px;
-  height: 40px;
+  overflow: hidden;
+  border-right: 0.15em solid var(--text-01);
+  white-space: nowrap;
+  animation: typing 1.5s steps(20, end), blink-caret 0.75s step-end infinite;
 }
 
 .list_item {
   margin-top: 15px;
+  position: relative;
   display: flex;
   align-items: center;
   gap: 15px;
+  animation: moveTop 1s both linear, opacity 1s both linear;
 }
 .icon_title_wrap {
   width: 150px;

@@ -19,22 +19,22 @@ function SettingItem() {
         <ul className={style.theme_wrap}>
           <li className={style.theme_item}>
             <div className={style.text} onClick={() => themeHandler("dark")}>
-              Dark Theme
+              Color Theme : Dark
             </div>
           </li>
           <li className={style.theme_item}>
             <div className={style.text} onClick={() => themeHandler("light")}>
-              Light Theme
+              Color Theme : Light
             </div>
           </li>
           <li className={style.theme_item}>
             <div className={style.text} onClick={() => themeHandler("blue")}>
-              Blue Theme
+              Color Theme : Blue
             </div>
           </li>
           <li className={style.theme_item}>
             <div className={style.text} onClick={() => themeHandler("purple")}>
-              Purple Theme
+              Color Theme : Purple
             </div>
           </li>
         </ul>

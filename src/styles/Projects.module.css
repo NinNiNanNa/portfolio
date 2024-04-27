@@ -1,10 +1,24 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveTop {
+  from {
+    top: 300px;
+  }
+  to {
+    top: 0;
+  }
+}
+
 .wrap {
-  padding: 2% 5%;
-  height: calc(100vh - 100px);
-  font-family: "D2Coding", sans-serif;
-  font-weight: 300;
-  overflow-y: scroll;
+  margin: 2% 5%;
   color: var(--text-01);
+  animation: opacity 1.5s both linear;
 }
 .title {
   margin-bottom: 30px;
@@ -15,6 +29,8 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  position: relative;
+  animation: moveTop 1s both linear;
 }
 .category_item {
   padding: 10px 20px;
@@ -36,6 +52,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  position: relative;
+  animation: moveTop 1s both linear;
 }
 .item_wrap {
   padding: 15px;

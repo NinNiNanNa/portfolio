@@ -1,5 +1,5 @@
-import ContactItem from "../components/content_item/ContactItem";
-import EmailForm from "../components/content_item/EmailForm";
+import ContactItem from "../components/contact/ContactItem";
+import EmailForm from "../components/contact/EmailForm";
 /* CSS import */
 import style from "../styles/Contact.module.css";
 

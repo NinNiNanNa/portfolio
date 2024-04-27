@@ -1,7 +1,5 @@
 import data from "../services/about";
 import Experience from "../components/about/Experience";
-/* img import */
-import profile from "../assets/images/profile.png";
 /* CSS import */
 import style from "../styles/About.module.css";
 import Skills from "../components/about/Skills";
@@ -12,7 +10,10 @@ function About() {
       <div className={style.wrap}>
         <div className={style.content_wrap}>
           <div className={style.img_wrap}>
-            <img src={profile} alt="profile" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/memogi04.png`}
+              alt="profile"
+            />
           </div>
           <div className={style.content}>
             <h1 className={style.intro_title}>
@@ -80,18 +81,21 @@ function About() {
               </p>
             </li>
           </ul>
+
+          <h2 className={style.title}>CAREER</h2>
+          <Experience data={data.career} icon="💼" />
+
+          <h2 className={style.title}>EDUCATION</h2>
+          <Experience data={data.education} icon="🎓" />
+
+          <h2 className={style.title}>
+            TECH STACK
+            <span>아이콘에 마우스를 올리면 자세한 설명이 나옵니다.</span>
+          </h2>
+          <Skills data={data.frontendSkills} title={"!-- FRONTEND SKILL"} />
+          <Skills data={data.backendSkills} title={"!-- BACKEND SKILL"} />
+          <Skills data={data.usingTool} title={"!-- USING TOOL"} />
         </div>
-
-        <h2 className={style.title}>CAREER</h2>
-        <Experience data={data.career} icon="💼" />
-
-        <h2 className={style.title}>EDUCATION</h2>
-        <Experience data={data.education} icon="🎓" />
-
-        <h2 className={style.title}>TECH STACK</h2>
-        <Skills data={data.frontendSkills} title={"!-- FRONTEND SKILL"} />
-        <Skills data={data.backendSkills} title={"!-- BACKEND SKILL"} />
-        <Skills data={data.usingTool} title={"!-- USING TOOL"} />
       </div>
     </>
   );

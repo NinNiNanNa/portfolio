@@ -39,23 +39,19 @@
   }
 }
 .animation_moveTop {
+  margin-bottom: 15px;
   position: relative;
-  overflow: hidden;
   opacity: 0;
   animation: moveTop 1s both linear, opacity 1s both linear;
 }
 
 .wrap {
-  padding: 50px 12%;
-  height: calc(100vh - 100px);
-  font-family: "D2Coding", sans-serif;
-  font-weight: 300;
-  overflow-y: scroll;
+  margin: 50px 12%;
+  overflow: hidden;
 }
 .content_wrap {
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 .img_wrap {
   margin-right: 30px;
@@ -65,7 +61,6 @@
 }
 .img_wrap img {
   width: 100%;
-  border-radius: 50%;
 }
 
 .content {
@@ -96,7 +91,13 @@
   text-align: center;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.skill_title {
+.title span {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+.sub_title {
   margin: 40px 0 15px;
 }
 

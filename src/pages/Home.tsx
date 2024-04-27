@@ -1,6 +1,4 @@
-import HomeItem from "../components/content_item/HomeItem";
-/* img import */
-import hello from "../assets/images/wave-hello.gif";
+import HomeItem from "../components/home/HomeItem";
 /* icon import */
 import DocumentsIcon from "../components/icons/DocumentsIcon";
 import ReactIcon from "../components/icons/ReactIcon";
@@ -22,8 +20,7 @@ function Home() {
       <div className={style.wrap}>
         <SolidColorVScodeIcon className={style.icon_big} />
         <div className={style.title_wrap}>
-          <h1 className={style.title}>Hello SoJin's World!</h1>
-          <img className={style.image} src={hello} alt="hello" />
+          <h1>Hello SoJin's World! 🖐</h1>
         </div>
         <div className={style.list_item_wrap}>
           <HomeItem
