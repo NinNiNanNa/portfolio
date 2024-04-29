@@ -96,17 +96,25 @@ const about = {
     {
       icon: "java.png",
       name: "JAVA",
-      explain: "",
+      explain: "JDBC 개념 이해 및 데이터베이스와 연동 할 수 있습니다.",
+    },
+    {
+      icon: "jsp.png",
+      name: "JSP",
+      explain:
+        "MVC model2방식을 사용하여 설계할 수 있고 JSTL과 EL문을 활용하여 html내에서 자바 문법을 표현할 수 있습니다.",
     },
     {
       icon: "sb.png",
       name: "Spring Boot",
-      explain: "",
+      explain:
+        "어노테이션 기반 Controller 구현이 가능하고 REST API를 개발하여 프로젝트를 진행한 경험이 있습니다.",
     },
     {
       icon: "oracle.png",
       name: "Oracle DB",
-      explain: "",
+      explain:
+        "DDL,DML을 사용하여 테이블 조작 및 제어 관련 쿼리문 작성과 CRUD를 할 수 있고 join을 활용하여 테이블을 합쳐서 사용할 수 있습니다.",
     },
   ],
   usingTool: [
@@ -119,13 +127,14 @@ const about = {
     {
       icon: "eclipse.png",
       name: "Eclipse",
-      explain: "",
+      explain:
+        "필요에 따라 다양한 jar 파일을 가져올 수 있고 코딩에 편리한 플러그인을 설치해 사용하고 있습니다.",
     },
     {
       icon: "figma.png",
       name: "Figma",
       explain:
-        "데스크톱, 모바일 UI/UX 시안을 작업 할 수 있으며, 디버깅을 잘 활용할 수 있습니다.",
+        "피그마를 활용하여 와이어프레임 및 프로토타입을 구성할 수 있습니다.",
     },
     {
       icon: "photoshop.png",
